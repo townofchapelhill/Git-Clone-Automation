@@ -1,0 +1,21 @@
+
+
+
+Daniel,
+
+
+For implementing automated repository downloads:
+
+
+I haven't done a write up for a program before so bear with me here.  My line of thinking is to create a seperate node.js file that will run from the terminal.  The file can be kept at the top of the directory that you wish to clone the repo into.
+
+
+Dependencies:  Inquirer (https://www.npmjs.com/package/inquirer)
+	       git-clone (https://www.npmjs.com/package/git-clone)
+
+
+Functionality: Currently what this program does is takes in user input for a github username, a repository name, and allows the user to name a the folder the clone will be stored in. Right now I'm trying to fix the directory issue.  This tool will allow you to name the folder you want to store the repo in and then it will store it in that folder.  However, it won't allow you to clone a repo into a pre-existing folder.  It also seems to have trouble console logging errors, trying to figure out a fix for that now.
+
+
+Future Plans: I want to add some functionality that will allow this script to do automatic pulls from github based on whether or not the particular branch has been updated.  Also I would like to fix the bugs of course.
+
